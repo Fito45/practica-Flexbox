@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: rgb(223, 52, 86);
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    color: aqua;
+
+}
+
 body {
     font-family: arial, sans-serif;
 }
@@ -14,9 +23,12 @@ body {
     justify-content: center;
     max-width: 1200px;
     padding: 24px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .card {
+    box-shadow: 10px 10px 0px rgb(164, 164, 212);
     padding: 12px;
     background-color:rgb(252, 58, 58);
     display: flex;
@@ -24,6 +36,13 @@ body {
     align-items: center;
     flex-basis: 30%;
     border-radius: 12px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(110%);
+    background-color: chocolate;   
 }
 
 ul{
@@ -34,6 +53,7 @@ ul{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    background-color: rgb(107, 176, 255);
 
 }
 
@@ -68,5 +88,6 @@ ul{
     font-size: 12px;
     background-color: rgb(200, 9, 44);
     border-radius: 8px;
+    color: aqua;
 }
 
